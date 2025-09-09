@@ -2,478 +2,306 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive construction website - Bedimcode</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ============= FAVICON ============= -->
-    <link rel="shortcut icon" href="constweb img/favicon.png">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <!-- ============= REMIXICONS ============= -->
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-    <!-- ============= SWIPER CSS ============= -->
-    <link rel="stylesheet" href="swiper-bundle.min.css">
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
 
-    <!-- ============= CSS ============= -->
-    <link rel="stylesheet" href="constweb.css">
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="./asset/css/index.css">
 
+   <title>Responsive headphones website - Bedimcode</title>
 </head>
 
 <body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">JBL</a>
 
-    <!-- ============= HEADER ============= -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <i class="ri-building-3-line"></i>
-                <span>Construct</span>
-            </a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link active-link">Home</a>
+               </li>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
+               <li class="nav__item">
+                  <a href="#about" class="nav__link">About</a>
+               </li>
 
-                    <li>
-                        <a href="#about" class="nav__link">About Us</a>
-                    </li>
+               <li class="nav__item">
+                  <a href="#favorite" class="nav__link">Favourite</a>
+               </li>
 
-                    <li>
-                        <a href="#services" class="nav__link">Services</a>
-                    </li>
+               <li class="nav__item">
+                  <a href="#model" class="nav__link">Models</a>
+               </li>
+            </ul>
 
-                    <li>
-                        <a href="#projects" class="nav__link">Projects</a>
-                    </li>
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
 
-                    <li>
-                        <a href="#contact" class="nav__link button">Contact Us</a>
-                    </li>
-                </ul>
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
 
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__content">
+               <img src="./asset/img/home-img.png" alt="image" class="home__img">
+
+               <h1 class="home__title">
+                  <span>J</span>
+                  <span>B</span>
+                  <span>L</span>
+               </h1>
+
+               <div class="home__tooltip">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="home__toooltip-img">
+                  <span class="home__tooltip-text">$150</span>
+               </div>               
             </div>
 
-            <!-- Toogle menu -->
-            <div class="nav__toogle" id="nav-toggle">
-                <i class="ri-apps-2-line"></i>
-            </div>
-        </nav>
-    </header>
+            <a href="#" class="home__button button">
+                  Buy Now <i class="ri-play-circle-fill"></i>
+               </a>
 
-    <!-- ============= MAIN ============= -->
-    <main class="main">
+                  <div class="home__social" id="about">
+                     <span class="home__social-text">Folow us</span>
 
-        <!-- ============= HOME ============= -->
-        <section class="home section" id="home">
-            <img src="constweb img/home-lines-bg.svg" alt="image" class="home__lines">
+                     <div class="home__socail-links">
+                        <a href="#" class="home__socials-link" target="_blank">
+                           <i class="ri-instagram-fill"></i>
+                        </a>
 
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__data">
-                        <h1 class="home__title">
-                            Create The <br>
-                            Constructions <br>
-                            You Want Here
-                        </h1>
+                        <a href="#" class="home__socials-link" target="_blank">
+                           <i class="ri-facebook-circle-fill"></i>
+                        </a>
 
-                        <p class="home__description">
-                            We provide the best home design, construct and
-                            maintenance services for you and your family.
-                        </p>
+                        <a href="#" class="home__socials-link" target="_blank">
+                           <i class="ri-youtube-fill"></i>
+                        </a>
+                     </div>
+                  </div>
+         </div>
+      </section>
 
-                        <div class="home__buttons">
-                            <a href="#services" class="button">Our Services</a>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title">
+                  MORE ABOUT US 
+               </h2>
 
-                            <a href="#projects" class="button__link">
-                                <span>View Projects</span>
-                                <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </div>
-                    </div>
+               <p class="about__description">
+                  Enjoy award-winning JB sound with 
+                  wireless listening freedom and a sleek,
+                  streamlined design with comfortable 
+                  cushioned earcups that deliver premium playback for the user.
+               </p>
 
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">10+</h3>
-                            <p class="home__info-description">Years of <br> Experiences</p>
-                        </div>
-
-                        <div>
-                            <h3 class="home__info-title">200</h3>
-                            <p class="home__info-description">Complete <br> Projects</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="home__images">
-                    <img src="constweb img/home-img-1.png" alt="image" class="home__img-1">
-                    <img src="constweb img/home-img-2.png" alt="image" class="home__img-2">
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ============= ABOUT ============= -->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <div class="about__data">
-                    <span class="section__subtitle">ABOUT US</span>
-                    <h2 class="section__title">
-                        We Provide The Best <br> Service To Build
-                    </h2>
-
-                    <p class="about__description">
-                        We strive to provide the best professionals
-                        to make your projects a comstruction masterpiece,
-                        something unique and unmatched.
-                    </p>
-
-                    <ul class="about__list grid">
-                        <li class="about__list-item">
-                            <i class="ri-checkbox-circle-line"></i>
-                            <span>professionals workers</span>
-                        </li>
-
-                        <li class="about__list-item">
-                            <i class="ri-checkbox-circle-line"></i>
-                            <span>Guaranteed quality</span>
-                        </li>
-
-                        <li class="about__list-item">
-                            <i class="ri-checkbox-circle-line"></i>
-                            <span>Extensive experience</span>
-                        </li>
-
-                        <li class="about__list-item">
-                            <i class="ri-checkbox-circle-line"></i>
-                            <span>We quote your project</span>
-                        </li>
-                    </ul>
-
-                    <a href="#about" class="button">View Projects</a>
-                </div>
-
-                <div class="about__images">
-                    <img src="constweb img/about-img-1.png" alt="image" class="about__img-1">
-                    <img src="constweb img/about-img-2.png" alt="image" class="about__img-2">
-                </div>
-            </div>
-        </section>
-
-        <!-- ============= SERVICES ============= -->
-        <section class="services section" id="services">
-            <div class="services__container container grid">
-                <div class="services__data">
-                    <div>
-                        <span class="section__subtitle">OUR SERVICES</span>
-                        <h2 class="section__title">High Quality <br> Construction Services</h2>
-                    </div>
-
-                    <p class="services__description">
-                        We povide multiple services for you, offering
-                        confidence and sercurity in construction.
-                    </p>
-
-                    <a href="#contact" class="button">Contact now</a>
-                </div>
-
-                <div class="services__swiper swiper">
-                    <div class="swiper-wrapper">
-                        <article class="services__card swiper-slide">
-                            <div class="services__icon">
-                                <i class="ri-building-line"></i>
-                            </div>
-
-                            <h3 class="services__title">Housing <br> Construction</h3>
-
-                            <p>
-                                We build with the best professionals
-                                and high-quality work for a safe and
-                                effective home.
-                            </p>
-                        </article>
-
-                        <article class="services__card swiper-slide">
-                            <div class="services__icon">
-                                <i class="ri-home-office-line"></i>
-                            </div>
-
-                            <h3 class="services__title">Construction Of <br> Home areas</h3>
-
-                            <p>
-                                We build with the best professionals
-                                and high-quality work for a safe and
-                                effective home.
-                            </p>
-                        </article>
-
-                        <article class="services__card swiper-slide">
-                            <div class="services__icon">
-                                <i class="ri-tools-line"></i>
-                            </div>
-
-                            <h3 class="services__title">Maintenance & <br> Repair</h3>
-
-                            <p>
-                                We build with the best professionals
-                                and high-quality work for a safe and
-                                effective home.
-                            </p>
-                        </article>
-
-                        <article class="services__card swiper-slide">
-                            <div class="services__icon">
-                                <i class="ri-box-3-line"></i>
-                            </div>
-
-                            <h3 class="services__title">Installation Of <br> ceramics & others</h3>
-
-                            <p>
-                                We build with the best professionals
-                                and high-quality work for a safe and
-                                effective home.
-                            </p>
-                        </article>
-
-                        <article class="services__card swiper-slide">
-                            <div class="services__icon">
-                                <i class="ri-drop-line"></i>
-                            </div>
-
-                            <h3 class="services__title">Water & Drainage <br> Installatio</h3>
-
-                            <p>
-                                We build with the best professionals
-                                and high-quality work for a safe and
-                                effective home.
-                            </p>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- Navigation buttons -->
-                <div class="swiper-button-prev">
-                    <i class="ri-arrow-left-line"></i>
-                </div>
-                <div class="swiper-button-next">
-                    <i class="ri-arrow-right-line"></i>
-                </div>
+               <a href="#" class="button">
+                  Know More <i class="ri-information-fill"></i>
+               </a>
             </div>
 
-            <div class="services__shape"></div>
-        </section>
+            <img src="./asset/img/about-img.png" alt="image" class="about__img">
+         </div>
+      </section>
 
-        <!-- ============= PROJECTS ============= -->
-        <section class="projects section" id="projects">
-            <span class="section__subtitle">OUR PROJECTS</span>
-            <h2 class="section__title">Latest Complete <br> Projects</h2>
+      <!--==================== FAVORITE ====================-->
+      <section class="favorite section" id="favorite">
+         <h2 class="section__title">
+            CHOOSE YOUR FAVOURITE
+         </h2>
 
-            <div class="projects__container container grid">
-                <aricle class="projects__card">
-                    <img src="constweb img/projects-img-1.png" alt="" class="projects__img">
+         <div class="favourite__container">
+            <div class="favourite__swiper swiper">
+               <div class="swiper-wrapper">
+                  <article class="favourite__article swiper-slide">
+                     <img src="./asset/img/favorite-1.png" alt="image" class="favourite__img">
 
-                    <div class="projects__data">
-                        <span>Housing Construction</span>
-                        <h2 class="pojects__title">Two Story House</h2>
-                        <span class="projects__date">January 15, 2024</span>
+                     <span class="favourite__model">Black Model</span>
+                  </article>
 
-                        <p>
-                            Construction of a two-story house with columns,
-                            foundations, floor, cellings and others.
-                        </p>
-                    </div>
-                </aricle>
+                  <article class="favourite__article swiper-slide">
+                     <img src="./asset/img/favorite-2.png" alt="image" class="favourite__img">
 
-                <aricle class="projects__card">
-                    <img src="constweb img/projects-img-2.png" alt="" class="projects__img">
+                     <span class="favourite__model">White Model</span>
+                  </article>
 
-                    <div class="projects__data">
-                        <span>Maintenance & Repair</span>
-                        <h2 class="pojects__title">Stairs & Columns</h2>
-                        <span class="projects__date">May 21, 2024</span>
+                  <article class="favourite__article swiper-slide">
+                     <img src="./asset/img/favorite-3.png" alt="image" class="favourite__img">
 
-                        <p>
-                            Construction of a two-story house with columns,
-                            foundations, floor, cellings and others.
-                        </p>
-                    </div>
-                </aricle>
+                     <span class="favourite__model">Red Model</span>
+                  </article>
 
-                <aricle class="projects__card">
-                    <img src="constweb img/projects-img-3.png" alt="" class="projects__img">
+                  <article class="favourite__article swiper-slide">
+                     <img src="./asset/img/favorite-4.png" alt="image" class="favourite__img">
 
-                    <div class="projects__data">
-                        <span>Construction Of Home Areas</span>
-                        <h2 class="pojects__title">Kitchen Room</h2>
-                        <span class="projects__date">July 03, 2024</span>
-
-                        <p>
-                            Construction of a two-story house with columns,
-                            foundations, floor, cellings and others.
-                        </p>
-                    </div>
-                </aricle>
+                     <span class="favourite__model">Teal Model</span>
+                  </article>
+               </div>
             </div>
-        </section>
+         </div>
+      </section>
 
-        <!-- ============= CONTACT ============= -->
-        <section class="contact section" id="contact">
-            <div class="container">
-                <span class="section__subtitle">CONTACT ME</span>
-                <h2 class="section__title">Write To Us & Build</h2>
+      <!--==================== MODEL ====================-->
+      <section class="model section" id="model">
+         <h2 class="section__title">
+            MODEL SPECIFICATIONS
+         </h2>
 
-                <div class="contact__container grid">
-                    <img src="constweb img/contact-img.png" alt="image" class="contact__img">
+         <div class="model__container container grid">
+            <div class="model__content">
+               <img src="./asset/img/model-img.png" alt="image" class="model__img">
 
-                    <div class="contact__data grid">
-                        <div class="contact__card">
-                            <div class="contact__icon">
-                                <i class="ri-map-pin-2-line"></i>
-                            </div>
+               <div class="model__tooltip model__tooltip-1">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Best Comfort</span>
+               </div>
 
-                            <h3 class="contact__title">I'm here </h3>
-                            <address class="contact__info">
-                                Peru - Lima <br>
-                                Av.Moon #321
-                            </address>
-                        </div>
+               <div class="model__tooltip model__tooltip-2">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Easy Adjustment</span>
+               </div>
 
-                        <div class="contact__card">
-                            <div class="contact__icon">
-                                <i class="ri-phone-line"></i>
-                            </div>
+               <div class="model__tooltip model__tooltip-3">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Fast Charge</span>
+               </div>
 
-                            <h3 class="contact__title">Talk to me </h3>
-                            <address class="contact__info">
-                                +00-987-7654-321 <br>
-                                +11-012345
-                            </address>
-                        </div>
-
-                        <div class="contact__card">
-                            <div class="contact__icon">
-                                <i class="ri-message-3-line"></i>
-                            </div>
-
-                            <h3 class="contact__title">Chat with me </h3>
-                            <div class="contact__social">
-                                <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!"
-                                    target="_blank" class="contact__social-link">
-                                    <i class="ri-whatsapp-line"></i>
-                                </a>
-
-                                <a href="https://m.me/bedimcode" target="_blank" class="contact__social-link">
-                                    <i class="ri-messenger-line"></i>
-                                </a>
-
-                                <a href="http://t.me/telegram" target="_blank" class="contact__social-link">
-                                    <i class="ri-telegram-line"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               <div class="model__tooltip model__tooltip-4">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Custom Audio</span>
+               </div>
             </div>
-        </section>
-    </main>
 
-    <!-- ============= FOOTER ============= -->
-    <footer class="footer">
-        <div class="footer__container container grid">
+            <a href="#" class="model__button button">Buy Now <i class="ri-play-circle-fill"></i></a>
+         </div>
+      </section>
+
+      <!--==================== SPONSOR ====================-->
+      <section class="sponsor section">
+         <div class="sponsour__container container grid">
+            <img src="./asset/img/sponsor-1.png" alt="image" class="sponsour__img">
+            <img src="./asset/img/sponsor-2.png" alt="image" class="sponsour__img">
+            <img src="./asset/img/sponsor-3.png" alt="image" class="sponsour__img">
+            <img src="./asset/img/sponsor-4.png" alt="image" class="sponsour__img">
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div>
+            <a href="#" class="footer__logo">JBL</a>
+         </div>
+
+         <div class="footer__data grid">
             <div>
-                <a href="#" class="footer__logo">
-                    <i class="ri-building-3-line"></i>
-                    <span>Construct </span>
-                </a>
+               <h3 class="footer__title">Products</h3>
+                  <ul class="footer__links">
+                     <li>
+                        <a href="" class="footer__link">Headphones</a>
+                     </li>
 
-                <p class="footer__description">
-                    We build sercurity <br> and trust in homes.
-                </p>
+                     <li>
+                        <a href="" class="footer__link">Earphones</a>
+                     </li>
 
-                <address class="footer__email">
-                    Email: construct123@email.com
-                </address>
+                     <li>
+                        <a href="" class="footer__link">Earbuds</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer__link">Accessories</a>
+                     </li>
+                  </ul>
             </div>
 
-            <div class="footer__content grid">
-                <div>
-                    <h3 class="footer__title">Company </h3>
+            <div>
+               <h3 class="footer__title">Support</h3>
+                  <ul class="footer__links">
+                     <li>
+                        <a href="" class="footer__link">Product Help</a>
+                     </li>
 
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#about" class="footer__link">About Us </a>
-                        </li>
+                     <li>
+                        <a href="" class="footer__link">Register</a>
+                     </li>
 
-                        <li>
-                            <a href="#services" class="footer__link">Services </a>
-                        </li>
+                     <li>
+                        <a href="" class="footer__link">Updats</a>
+                     </li>
 
-                        <li>
-                            <a href="#projects" class="footer__link">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">Information </h3>
-
-                    <ul class="footer__list">
-                        <li>
-                            <address class="footer__info">Peru - Lima <br> Av.Moon #321</address>
-                        </li>
-
-                        <li>
-                            <address class="footer__info">9AM - 11P</address>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">Social Media</h3>
-
-                    <div class="footer__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-facebook-circle-line"></i>
-                        </a>
-
-                        <a href="https://ww.instagram.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-
-                        <a href="https://twitter.com " target="_blank" class="footer__social-link">
-                            <i class="ri-twitter-x-line"></i>
-                        </a>
-                    </div>
-                </div>
+                     <li>
+                        <a href="" class="footer__link">Provides</a>
+                     </li>
+                  </ul>
             </div>
-        </div>
 
-        <span class="footer__copy">
-            &#169; All Rights Reserved By Bedimcode 
-        </span>
-    </footer>
+            <div class="footer__group">
+               <form action="" class="footer__form">
+                  <input type="text" placeholder="Email" class="footer__input">
+                  <button class="footer__button button">
+                     Subscribe <i class="ri-send-plane-fill"></i>
+                  </button>
+               </form>
 
+               <div class="footer__socials">
+                  <a href="#" target="_blank" class="footer__socials-link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>
 
-     <!-- ============= SCROLL UP ============= -->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line"></i>
-    </a>
+                  <a href="#" target="_blank" class="footer__socials-link">
+                     <i class="ri-facebook-circle-fill"></i>
+                  </a>
 
-    <!-- ============= SCROLL REVEAL ============= -->
-    <script src="scrollreveal.min.js"></script>
+                  <a href="#" target="_blank" class="footer__socials-link">
+                     <i class="ri-youtube-fill"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
 
-    <!-- ============= SWIPER JS ============= -->
-    <script src="swiper-bundle.min.js"></script>
+      <span class="footer__copy">
+         &#169; All Rights Reserved By Bedimcode
+      </span>
+   </footer>
 
+   <!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+   <i class="ri-arrow-up-s-line"></i>
+</a>
 
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="./asset/js/scrollreveal.min.js"></script>
 
-    <!-- ============= MAIN JS ============= -->
-    <script src="constweb.js"></script>
+   <!--=============== SWIPER JS ===============-->
+   <script src="./asset/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="./asset/js/index.js"></script>
 </body>
 
 </html>

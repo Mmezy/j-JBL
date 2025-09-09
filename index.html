@@ -2,427 +2,306 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive travel website - Bedimcode</title>
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="./assets/img/favicon.png">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== REMIXICONS ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-    <!--=============== MAIN CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/travelweb.css">
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="./asset/css/index.css">
+
+   <title>Responsive headphones website - Bedimcode</title>
 </head>
 
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="./assets/img/logo.svg" alt="image">
-                <span>GoTravel</span>
-            </a>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">JBL</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link active-link">Home</a>
+               </li>
 
-                    <li>
-                        <a href="#destination" class="nav__link">Destination</a>
-                    </li>
+               <li class="nav__item">
+                  <a href="#about" class="nav__link">About</a>
+               </li>
 
-                    <li>
-                        <a href="#testimonials" class="nav__link">Testimonials</a>
-                    </li>
+               <li class="nav__item">
+                  <a href="#favorite" class="nav__link">Favourite</a>
+               </li>
 
-                    <li>
-                        <a href="#gallery" class="nav__link">Gallery</a>
-                    </li>
+               <li class="nav__item">
+                  <a href="#model" class="nav__link">Models</a>
+               </li>
+            </ul>
 
-                    <li>
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
-                </ul>
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
 
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
 
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__content">
+               <img src="./asset/img/home-img.png" alt="image" class="home__img">
+
+               <h1 class="home__title">
+                  <span>J</span>
+                  <span>B</span>
+                  <span>L</span>
+               </h1>
+
+               <div class="home__tooltip">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="home__toooltip-img">
+                  <span class="home__tooltip-text">$150</span>
+               </div>               
             </div>
 
-            <div class="nav__button">
-                <!-- Theme button -->
-                <i class="ri-moon-fill nav__theme" id="theme-button"></i>
+            <a href="#" class="home__button button">
+                  Buy Now <i class="ri-play-circle-fill"></i>
+               </a>
 
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-apps-2-fill"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
+                  <div class="home__social" id="about">
+                     <span class="home__social-text">Folow us</span>
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <img src="./assets/img/home-bg.png" alt="" class="home__bg">
-            <div class="home__blur"></div>  
-
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <h1 class="home__title">
-                        Travel <br> Around <br> The World
-                    </h1>
-
-                    <p class="home__description">
-                        Explore the best beautiful tourist spots in
-                        the countries and see the world on all your
-                        amazing adventures.
-                    </p>
-
-                    <a href="#destination" class="button button__opa-30">
-                        Explore The World
-                        <i class="ri-arrow-right-long-line"></i>
-                    </a>
-                </div>
-
-                <div class="home__swiper swiper">
-                    <div class="swiper-wrapper">
-                        <article class="home__article swiper-slide">
-                            <img src="./assets/img/home-img-1.png" alt="image" class="home__img">
-                        </article>
-
-                        <article class="home__article swiper-slide">
-                            <img src="./assets/img/home-img-2.png" alt="image" class="home__img">
-                        </article>
-
-                        <article class="home__article swiper-slide">
-                            <img src="./assets/img/home-img-3.png" alt="image" class="home__img">
-                        </article>
-
-                        <article class="home__article swiper-slide">
-                            <img src="./assets/img/home-img-4.png" alt="image" class="home__img">
-                        </article>
-                    </div>
-
-                    <!-- Navigation buttons -->
-                    <div class="swiper-button-prev">
-                        <i class="ri-arrow-left-long-line"></i>
-                    </div>
-                    <div class="swiper-button-next">
-                        <i class="ri-arrow-right-long-line"></i>
-                    </div>
-
-
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!--==================== DESTINATION ====================-->
-        <section class="destination section" id="destination">
-            <h2 class="section__title">Find Your Best <br> Destination</h2>
-
-            <div class="destination__container container grid">
-                <article class="destination__card">
-                    <img src="./assets/img/destination-img-1.png" alt="image" class="destination__img">
-
-                    <div class="destination__data">
-                        <h3 class="destination__subtitle">Bali</h3>
-                        <h2 class="destination__title">ISLAND</h2>
-                        <p class="destination__country">
-                            <i class="ri-map-pin-2-fill"></i>
-                        </p>
-                        <span>Indonesia</span>
-                    </div>
-                </article>
-
-                <article class="destination__card">
-                    <img src="./assets/img/destination-img-2.png" alt="image" class="destination__img">
-
-                    <div class="destination__data">
-                        <h3 class="destination__subtitle">Banana</h3>
-                        <h2 class="destination__title">BEACH</h2>
-                        <p class="destination__country">
-                            <i class="ri-map-pin-2-fill"></i>
-                        </p>
-                        <span>Tailandia</span>
-                    </div>
-                </article>
-
-                <article class="destination__card">
-                    <img src="./assets/img/destination-img-3.png" alt="image" class="destination__img">
-
-                    <div class="destination__data">
-                        <h3 class="destination__subtitle">Santorini</h3>
-                        <h2 class="destination__title">ISLAND</h2>
-                        <p class="destination__country">
-                            <i class="ri-map-pin-2-fill"></i>
-                        </p>
-                        <span>Grecia</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section" id="testimonials">
-            <h2 class="section__title">What Are <br> They Saying?</h2>
-
-            <div class="testimonial__container container grid">
-                <img src="./assets/img/testimonial-img.png" alt="image" class="testimonial__img">
-
-                <div class="testimonial__swiper swiper">
-                    <div class="swiper-wrapper">
-                        <div class="testimonial__card swiper-slide">
-                            <h2 class="testimonial__title">Ama Dablam</h2>
-                            <p class="testimonial__description">
-                                I was delighted to visit the country because the
-                                scenery is beautiful. The residents also welcomed
-                                me happily and with smiles.
-                            </p>
-
-                            <div class="testimonial__profile">
-                                <img src="./assets/img/testimonial-profile-1.png" alt="image">
-
-                                <div class="testimonial__info">
-                                    <h3>Will</h3>
-                                    <p>Photographer</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial__card swiper-slide">
-                            <h2 class="testimonial__title">Mount Fuji</h2>
-                            <p class="testimonial__description">
-                                I was delighted to visit the country because the
-                                scenery is beautiful. The residents also welcomed
-                                me happily and with smiles.
-                            </p>
-
-                            <div class="testimonial__profile">
-                                <img src="./assets/img/testimonial-profile-2.png" alt="image">
-
-                                <div class="testimonial__info">
-                                    <h3>Rose</h3>
-                                    <p>Influencer</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial__card swiper-slide">
-                            <h2 class="testimonial__title">Manga Parbat</h2>
-                            <p class="testimonial__description">
-                                I was delighted to visit the country because the
-                                scenery is beautiful. The residents also welcomed
-                                me happily and with smiles.
-                            </p>
-
-                            <div class="testimonial__profile">
-                                <img src="./assets/img/testimonial-profile-3.png" alt="image">
-
-                                <div class="testimonial__info">
-                                    <h3>Glan</h3>
-                                    <p>Blogger</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Navigation buttons -->
-                    <div class="swiper-button-prev">
-                        <i class="ri-arrow-left-long-line"></i>
-                    </div>
-                    <div class="swiper-button-next">
-                        <i class="ri-arrow-right-long-line"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== GALLERY ====================-->
-        <section class="gallery section" id="gallery">
-            <h2 class="section__title">Gallery</h2>
-
-            <div class="gallery__container container grid">
-                <article class="gallery__card">
-                    <img src="./assets/img/gallery-img-1.png" alt="image" class="gallery__img">
-                    <div class="gallery__shadow"></div>
-
-                    <div class="gallery__data">
-                        <h3 class="gallery__subtitle">Nusa</h3>
-                        <h2 class="gallery__title">Indonesia</h2>
-                    </div>
-                </article>
-
-                <article class="gallery__card">
-                    <img src="./assets/img/gallery-img-2.png" alt="image" class="gallery__img">
-                    <div class="gallery__shadow"></div>
-
-                    <div class="gallery__data">
-                        <h3 class="gallery__subtitle">Cook</h3>
-                        <h2 class="gallery__title">Nueva Zelanda</h2>
-                    </div>
-                </article>
-
-                <article class="gallery__card">
-                    <img src="./assets/img/gallery-img-3.png" alt="image" class="gallery__img">
-                    <div class="gallery__shadow"></div>
-
-                    <div class="gallery__data">
-                        <h3 class="gallery__subtitle">Bora Bora</h3>
-                        <h2 class="gallery__title">Polinesia</h2>
-                    </div>
-                </article>
-
-                <article class="gallery__card">
-                    <img src="./assets/img/gallery-img-4.png" alt="image" class="gallery__img">
-                    <div class="gallery__shadow"></div>
-
-                    <div class="gallery__data">
-                        <h3 class="gallery__subtitle">Santorini</h3>
-                        <h2 class="gallery__title">Grecia</h2>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!--==================== JOIN ====================-->
-        <section class="join section" id="contact">
-            <div class="jion__container container grid">
-                <div class="join__data">
-                    <h2 class="section__title">Your Journey <br> Starts Here</h2>
-
-                    <p class="join__description">
-                        Get up to date with the latest travel
-                        and information from us.
-                    </p>
-
-                    <form action="" class="join__form">
-                        <input type="text" placeholder="Enter your email" class="join__input">
-                        <button class="join__button button">
-                            Join our newsletter
-                            <i class="ri-arrow-right-long-line"></i>
-                        </button>
-                    </form>
-                </div>
-
-                <img src="./assets/img/join-img.png" alt="image" class="join__img">
-            </div>
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer__container container grid">
-            <a href="#" class="footer__logo">
-                <img src="./assets/img/logo.svg" alt="image">
-                <span>GoTravel</span>  
-            </a>
-
-            <div class="footer__content grid">
-                <div>
-                    <h3 class="footer__title">About</h3>
-
-                    <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">About Us</a> 
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Features</a> 
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">News & Blogs</a> 
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">Contact</h3>
-
-                    <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">Call Center</a> 
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Support</a> 
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Contact Us</a> 
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">Support</h3>
-
-                    <ul class="footer__links">
-                        <li>
-                           <a href="#" class="footer__link">Privacy</a> 
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Terms & Services</a> 
-                        </li>
-
-                        <li>
-                           <a href="#" class="footer__link">Payment</a> 
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">Socials</h3>
-
-                    <div class="footer__socials">
-                        <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
-                            <i class="ri-facebook-circle-fill"></i>
+                     <div class="home__socail-links">
+                        <a href="#" class="home__socials-link" target="_blank">
+                           <i class="ri-instagram-fill"></i>
                         </a>
 
-                        <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
-                            <i class="ri-instagram-fill"></i>
+                        <a href="#" class="home__socials-link" target="_blank">
+                           <i class="ri-facebook-circle-fill"></i>
                         </a>
 
-                        <a href="https://www.twitter.com" target="_blank" class="footer__social-link">
-                            <i class="ri-twitter-x-fill"></i>
+                        <a href="#" class="home__socials-link" target="_blank">
+                           <i class="ri-youtube-fill"></i>
                         </a>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h2 class="section__title">
+                  MORE ABOUT US 
+               </h2>
+
+               <p class="about__description">
+                  Enjoy award-winning JB sound with 
+                  wireless listening freedom and a sleek,
+                  streamlined design with comfortable 
+                  cushioned earcups that deliver premium playback for the user.
+               </p>
+
+               <a href="#" class="button">
+                  Know More <i class="ri-information-fill"></i>
+               </a>
             </div>
 
-            <span class="footer__copy">
-                &#169; All Rights Reserved By Bedimcode
-            </span>
+            <img src="./asset/img/about-img.png" alt="image" class="about__img">
+         </div>
+      </section>
 
-        </div>
-    </footer>
+      <!--==================== FAVORITE ====================-->
+      <section class="favorite section" id="favorite">
+         <h2 class="section__title">
+            CHOOSE YOUR FAVOURITE
+         </h2>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line"></i>
-    </a>
+         <div class="favourite__container">
+            <div class="favourite__swiper swiper">
+               <div class="swiper-wrapper">
+                  <article class="favourite__article swiper-slide">
+                     <img src="./asset/img/favorite-1.png" alt="image" class="favourite__img">
 
-    <!--==================== SCROLL REVEAL ====================-->
-    <script src="./assets/js/scrollreveal.min.js"></script>
+                     <span class="favourite__model">Black Model</span>
+                  </article>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+                  <article class="favourite__article swiper-slide">
+                     <img src="./asset/img/favorite-2.png" alt="image" class="favourite__img">
 
-    <!--==================== MAIN JS ====================-->
-    <script src="./assets/js/travelweb.js"></script>
+                     <span class="favourite__model">White Model</span>
+                  </article>
 
+                  <article class="favourite__article swiper-slide">
+                     <img src="./asset/img/favorite-3.png" alt="image" class="favourite__img">
+
+                     <span class="favourite__model">Red Model</span>
+                  </article>
+
+                  <article class="favourite__article swiper-slide">
+                     <img src="./asset/img/favorite-4.png" alt="image" class="favourite__img">
+
+                     <span class="favourite__model">Teal Model</span>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== MODEL ====================-->
+      <section class="model section" id="model">
+         <h2 class="section__title">
+            MODEL SPECIFICATIONS
+         </h2>
+
+         <div class="model__container container grid">
+            <div class="model__content">
+               <img src="./asset/img/model-img.png" alt="image" class="model__img">
+
+               <div class="model__tooltip model__tooltip-1">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Best Comfort</span>
+               </div>
+
+               <div class="model__tooltip model__tooltip-2">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Easy Adjustment</span>
+               </div>
+
+               <div class="model__tooltip model__tooltip-3">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Fast Charge</span>
+               </div>
+
+               <div class="model__tooltip model__tooltip-4">
+                  <img src="./asset/img/tooltip-right.svg" alt="image" class="model__tooltip-img">
+                  <span class="model__tooltip-text">Custom Audio</span>
+               </div>
+            </div>
+
+            <a href="#" class="model__button button">Buy Now <i class="ri-play-circle-fill"></i></a>
+         </div>
+      </section>
+
+      <!--==================== SPONSOR ====================-->
+      <section class="sponsor section">
+         <div class="sponsour__container container grid">
+            <img src="./asset/img/sponsor-1.png" alt="image" class="sponsour__img">
+            <img src="./asset/img/sponsor-2.png" alt="image" class="sponsour__img">
+            <img src="./asset/img/sponsor-3.png" alt="image" class="sponsour__img">
+            <img src="./asset/img/sponsor-4.png" alt="image" class="sponsour__img">
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div>
+            <a href="#" class="footer__logo">JBL</a>
+         </div>
+
+         <div class="footer__data grid">
+            <div>
+               <h3 class="footer__title">Products</h3>
+                  <ul class="footer__links">
+                     <li>
+                        <a href="" class="footer__link">Headphones</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer__link">Earphones</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer__link">Earbuds</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer__link">Accessories</a>
+                     </li>
+                  </ul>
+            </div>
+
+            <div>
+               <h3 class="footer__title">Support</h3>
+                  <ul class="footer__links">
+                     <li>
+                        <a href="" class="footer__link">Product Help</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer__link">Register</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer__link">Updats</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer__link">Provides</a>
+                     </li>
+                  </ul>
+            </div>
+
+            <div class="footer__group">
+               <form action="" class="footer__form">
+                  <input type="text" placeholder="Email" class="footer__input">
+                  <button class="footer__button button">
+                     Subscribe <i class="ri-send-plane-fill"></i>
+                  </button>
+               </form>
+
+               <div class="footer__socials">
+                  <a href="#" target="_blank" class="footer__socials-link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>
+
+                  <a href="#" target="_blank" class="footer__socials-link">
+                     <i class="ri-facebook-circle-fill"></i>
+                  </a>
+
+                  <a href="#" target="_blank" class="footer__socials-link">
+                     <i class="ri-youtube-fill"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <span class="footer__copy">
+         &#169; All Rights Reserved By Bedimcode
+      </span>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+   <i class="ri-arrow-up-s-line"></i>
+</a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="./asset/js/scrollreveal.min.js"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="./asset/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="./asset/js/index.js"></script>
 </body>
 
 </html>
